@@ -1,5 +1,5 @@
 #!/bin/sh
-HOME="/mnt/HPStorage/Kathir"
+HOME="/home/Kathir"
 mkdir $HOME/LongRead
 cd $HOME/LongRead
 mkdir fastq Reference Mapping Final_BAM gatk_vcf snpeff whatshap Softwares Others
