@@ -16,7 +16,7 @@ for bam in $(ls *_minimap2.bam); do if ! test -f $bam; then
   echo "Problem with Mapping, something isn't correct"
 fi;done
 ##Adding Read group information for each bam files with sample and platform details
-for i in $(ls *._minimap2.bam | uniq); do java  -jar  $HOME/LongRead/Softwares/picard/picard.jar AddOrReplaceReadGroups I=${i} O=${i%}_picard.bam RGID=4 RGLB=lib1 RGPL=ILLUMINA RGPU=unit1 RGSM=${i};done
+for i in $(ls *._minimap2.bam | uniq); do java  -jar  $HOME/LongRead/Softwares/picard/picard.jar AddOrReplaceReadGroups I=${i} O=${i%}_picard.bam RGID=XXXX RGLB=XXXX RGPL=XXXX RGPU=XXXX RGSM=${i};done
 for bam in $(ls *_picard.bam); do if test -f $bam; then
   echo "Adding Read group is done."
 fi;done
